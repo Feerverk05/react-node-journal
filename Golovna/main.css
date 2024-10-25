@@ -1,0 +1,251 @@
+body {
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    width: 100%;
+    height: 140vh; 
+    background-image: url('1.JPG');
+    background-size: cover;
+    
+}
+
+.intro__title {
+    font-size: 42px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    max-width: 850px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 30px;
+    float: left;
+    padding-top: 25px;
+}
+
+.header__logo-img {
+    width: 100px;
+    float: left;
+    transform: translate(40px);
+}
+
+.header__menu {
+    float: right;
+    padding-top: 27px;
+}
+
+.header__menu a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: color .2s linear;
+}
+
+.header__menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.header__menu a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header__menu .btnLogin-popup
+{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 300;
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.header__menu .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+
+}
+
+
+
+.hidden {
+    font-size: 23px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    max-width: 950px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.section {
+    padding: 30px 0;
+    background-color: #fff;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section__suptitle {
+    font-family: 'Times New Roman', cursive;
+    font-size: 36px;
+    color: #162938;
+}
+
+
+.section__text {
+    font-family: 'Times New Roman', cursive;
+    font-size: 18px;
+    color: #162938;
+    text-align: center;
+}
+
+.slider{
+    position: relative;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider__line{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+}
+
+.slider__btn-prev{
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    background-color: transparent;
+    border: none;
+}
+
+.slider__btn-next{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    background-color: transparent;
+    border: none;
+}
+
+.slider__wrapper{
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider__dot{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #524336;
+}
+
+.slider__dot:hover {
+    background-color: #BB8C5F;
+}
+
+.active-dot {
+    background-color: #BB8C5F;
+}
+
+.slider__btn-next img, .slider__btn-prev img {
+    width: 40px;
+}
+
+@media (max-width: 850px) {
+
+    .slider__btn-next img, .slider__btn-prev img {
+        width: calc(20px + (40 - 20) * ((100vw - 320px) / (850 - 320)));
+    }
+
+    .slider__dot {
+        width: calc(8px + (12 - 8) * ((100vw - 320px) / (850 - 320)));
+        height: calc(8px + (12 - 8) * ((100vw - 320px) / (850 - 320)));
+    }
+
+    .slider__wrapper{
+        column-gap: calc(5px + (10 - 5) * ((100vw - 320px) / (850 - 320)));
+    }
+}
+
+
+.footer {
+    background-color: #006400;
+    color: #fff;
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+.ukraine-img
+{
+        width: 380px;
+        float: right;
+        transform: translate(5px);
+        padding: auto;
+}

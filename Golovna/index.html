@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSphere</title>
+    <link rel="stylesheet" href="main.css"> 
+</head>
+<body>
+    <header class="header">
+
+    <div class="container header-container">
+        <div class="logo-wrapper">
+            <img src="2.png" alt="EduSphere Logo" class="header__logo-img">
+            <div class="header__logo">EduSphere</div>
+        </div>
+        <div class="menu-wrapper">
+            <div class="header__menu">
+                <button class="btnLogin-popup" onclick="document.location ='http://localhost:5173/Login'">Увійти</button>
+                
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="intro">
+        <div class="container">
+            <h1 class="intro__title">Система автоматизації освітнього процесу</h1>
+            <p class="hidden">
+                Education Sphere - система автоматизації для закладів загальної<br> 
+                середньої освіти та професійно-технічних навчальних закладів
+            </p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h3 class="section__suptitle">Основні переваги Education School</h3>
+                <div class="section__text">
+                    <p>Програмне забезпечення Smart School містить в собі ряд функцій, які вирізняють його<br>
+                        серед інших систем автоматизації навчального процесу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slider">
+        <div class="slider__line">
+            <div class="slider__img">
+                <img  src="3.png">
+            </div>
+            <div class="slider__img">
+                <img  src="4.png">
+            </div>
+            <div class="slider__img">
+                <img  src="5.png">
+            </div>
+            <div class="slider__img">
+                <img  src="6.png">
+            </div>
+        </div>
+
+        <button class="slider__btn-prev">
+            <img src="left.png">
+        </button>
+        <button class="slider__btn-next">
+            <img src="right.png">
+        </button>
+
+        <div class="slider__wrapper">
+            <div class="slider__dot active-dot"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <img src="8.png" alt="Ukraine" class="ukraine-img">
+            <div class="footer-my-list">
+                <p class="text-bold text-uppercase p">Дізнайтеся більше</p>			
+                <div class="textwidget">
+                    <p class="text-uppercase text-bold">+ 38 (099) - 34 - 60 - 115</p>
+                    <p class="email">
+                        <i class="glyphicon glyphicon-envelope"></i> info@education-school.com.ua</p><br>
+                    <p class="inform">
+                        <i class="information"></i> © Education School 2023 - Всі права захищені</p>      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
